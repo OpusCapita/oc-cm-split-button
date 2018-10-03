@@ -1,3 +1,5 @@
-import Example from './example.component';
+import SplitButton from './splitbutton.component';
+import Icon from './icon.component';
 
-export default Example;
+export default SplitButton;
+export { Icon };

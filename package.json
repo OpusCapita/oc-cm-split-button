@@ -16,13 +16,15 @@
     "build:umd": "cross-env NODE_ENV=development BUILD_ENV=umd webpack",
     "build:umd-min": "cross-env NODE_ENV=production BUILD_ENV=umd webpack",
     "build:docs": "cross-env NODE_ENV=production BUILD_ENV=umd webpack --config webpack.docs.config.js",
+    "build:storybook": "build-storybook",
     "watch": "npm-run-all --parallel watch:*",
     "watch:cjs": "cross-env NODE_ENV=development BUILD_ENV=cjs babel ./src --out-dir lib/cjs --copy-files --watch",
     "watch:es": "cross-env NODE_ENV=development BUILD_ENV=es babel ./src --out-dir lib/es --copy-files --watch",
     "watch:umd": "cross-env NODE_ENV=development BUILD_ENV=umd webpack --progress --colors --watch",
+    "storybook": "start-storybook -p 6006",
     "hot": "cross-env NODE_ENV=development BUILD_ENV=hot webpack-dev-server --config webpack.docs.hot.config.js",
     "lint": "node_modules/.bin/eslint --ext .jsx,.js src/ src_docs/",
-    "test": "cross-env NODE_ENV=production BUILD_ENV=test mocha",
+    "test": "cross-env NODE_ENV=production BUILD_ENV=test jest --coverage",
     "preversion": "npm run lint && npm test",
     "version": "npm run build && git add -A lib docs",
     "postversion": "git push && git push --tags"
@@ -31,12 +33,24 @@
     "node": ">=6.10.0",
     "npm": ">=5.4.0"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    }
+  },
   "peerDependencies": {
+    "font-awesome": "4",
     "prop-types": "15",
     "react": "15 || 16",
-    "react-dom": "15 || 16"
+    "react-dom": "15 || 16",
+    "styled-components": "3"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "3.4.8",
+    "@storybook/addon-knobs": "3.4.8",
+    "@storybook/addon-links": "3.4.7",
+    "@storybook/addon-options": "3.4.8",
+    "@storybook/react": "3.4.8",
     "autoprefixer": "8.6.3",
     "babel-cli": "6.26.0",
     "babel-eslint": "8.2.3",
@@ -64,10 +78,13 @@
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.9.1",
     "file-loader": "1.1.11",
+    "font-awesome": "4.7.0",
     "global-jsdom": "4.2.0",
     "html-webpack-plugin": "3.2.0",
+    "identity-obj-proxy": "3.0.0",
     "ignore-styles": "5.0.1",
     "immutable": "3.8.2",
+    "jest": "23.5.0",
     "jsdom": "11.11.0",
     "mocha": "5.2.0",
     "node-sass": "4.9.0",
@@ -83,11 +100,14 @@
     "react-hot-loader": "4.3.3",
     "react-router": "4.3.1",
     "react-router-dom": "4.3.1",
+    "react-select": "1.2.1",
     "react-svg-loader": "2.1.0",
+    "react-test-renderer": "16.4.2",
     "rimraf": "2.6.2",
     "sass-loader": "7.0.3",
     "sinon": "6.0.0",
     "style-loader": "0.21.0",
+    "styled-components": "3.3.3",
     "url-loader": "1.0.1",
     "webpack": "3.11.0",
     "webpack-dev-server": "2.11.2",
@@ -97,7 +117,9 @@
     "write-file-webpack-plugin": "4.3.2"
   },
   "dependencies": {
-    "@opuscapita/oc-cm-common-styles": "2.1.0"
+    "@opuscapita/oc-cm-common-layouts": "2.2.0",
+    "@opuscapita/oc-cm-common-styles": "2.2.0",
+    "@opuscapita/react-dropdown": "2.1.1"
   },
   "repository": {
     "type": "git",
