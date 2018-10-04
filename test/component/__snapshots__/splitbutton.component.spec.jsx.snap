@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SplitButton renders correctly (disabled) 1`] = `
+<section
+  className="sc-kEYyzF kmXTDj"
+  id="split-button"
+>
+  <button
+    className="sc-bwzfXH IsBR"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <i
+      aria-hidden="true"
+      className="sc-hMqMXs fa fa-check krqEzY"
+      color="lightgreen"
+      size="1.5rem"
+    />
+    Split Button
+  </button>
+  <div
+    className="oc-dropdown-menu"
+  >
+    <div
+      className="sc-kkGfuU brzToE dropdown btn-group"
+      primary={0}
+      style={
+        Object {
+          "bsSize": "xs",
+          "bsStyle": "info",
+        }
+      }
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-default"
+        disabled={false}
+        id="split-button-dropdown"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        type="button"
+      >
+        <i
+          className="sc-hMqMXs fa fa-angle-down qPVAu"
+          color="white"
+          size="2rem"
+        />
+      </button>
+      <ul
+        aria-labelledby="split-button-dropdown"
+        className="dropdown-menu dropdown-menu-right"
+        role="menu"
+      >
+        <li
+          className=""
+          role="presentation"
+        >
+          <a
+            href="#"
+            id="item_id_21"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="menuitem"
+            tabIndex="-1"
+          >
+            <span
+              className="oc-dropdown-menu-icon"
+            />
+            <span
+              className="oc-dropdown-menu-title"
+            >
+              Item 1
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+          role="presentation"
+        >
+          <a
+            href="#"
+            id="item_id_22"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="menuitem"
+            tabIndex="-1"
+          >
+            <span
+              className="oc-dropdown-menu-icon"
+            />
+            <span
+              className="oc-dropdown-menu-title"
+            >
+              Item 2
+            </span>
+          </a>
+        </li>
+        <li
+          className="divider"
+          onKeyDown={[Function]}
+          role="separator"
+        />
+        <li
+          className=""
+          role="presentation"
+        >
+          <a
+            href="#"
+            id="item_id_23"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="menuitem"
+            tabIndex="-1"
+          >
+            <span
+              className="oc-dropdown-menu-icon"
+            />
+            <span
+              className="oc-dropdown-menu-title"
+            >
+              Item 3
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`SplitButton renders correctly (enabled) 1`] = `
+<section
+  className="sc-kEYyzF kmXTDj"
+  id="split-button"
+>
+  <button
+    className="sc-bwzfXH IsBR"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <i
+      aria-hidden="true"
+      className="sc-hMqMXs fa fa-check krqEzY"
+      color="lightgreen"
+      size="1.5rem"
+    />
+    Split Button
+  </button>
+  <div
+    className="oc-dropdown-menu"
+  >
+    <div
+      className="sc-kkGfuU brzToE dropdown btn-group"
+      primary={0}
+      style={
+        Object {
+          "bsSize": "xs",
+          "bsStyle": "info",
+        }
+      }
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-default"
+        disabled={false}
+        id="split-button-dropdown"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        type="button"
+      >
+        <i
+          className="sc-hMqMXs fa fa-angle-down qPVAu"
+          color="white"
+          size="2rem"
+        />
+      </button>
+      <ul
+        aria-labelledby="split-button-dropdown"
+        className="dropdown-menu dropdown-menu-right"
+        role="menu"
+      >
+        <li
+          className=""
+          role="presentation"
+        >
+          <a
+            href="#"
+            id="item_id_21"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="menuitem"
+            tabIndex="-1"
+          >
+            <span
+              className="oc-dropdown-menu-icon"
+            />
+            <span
+              className="oc-dropdown-menu-title"
+            >
+              Item 1
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+          role="presentation"
+        >
+          <a
+            href="#"
+            id="item_id_22"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="menuitem"
+            tabIndex="-1"
+          >
+            <span
+              className="oc-dropdown-menu-icon"
+            />
+            <span
+              className="oc-dropdown-menu-title"
+            >
+              Item 2
+            </span>
+          </a>
+        </li>
+        <li
+          className="divider"
+          onKeyDown={[Function]}
+          role="separator"
+        />
+        <li
+          className=""
+          role="presentation"
+        >
+          <a
+            href="#"
+            id="item_id_23"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="menuitem"
+            tabIndex="-1"
+          >
+            <span
+              className="oc-dropdown-menu-icon"
+            />
+            <span
+              className="oc-dropdown-menu-title"
+            >
+              Item 3
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;
