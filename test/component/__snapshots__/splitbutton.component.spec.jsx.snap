@@ -2,7 +2,7 @@
 
 exports[`SplitButton renders correctly (disabled) 1`] = `
 <section
-  className="sc-kEYyzF kmXTDj"
+  className="sc-kkGfuU guPmGB"
   id="split-button"
 >
   <button
@@ -12,7 +12,7 @@ exports[`SplitButton renders correctly (disabled) 1`] = `
   >
     <i
       aria-hidden="true"
-      className="sc-hMqMXs fa fa-check krqEzY"
+      className="sc-kEYyzF fa fa-check kmLqdR"
       color="lightgreen"
       size="1.5rem"
     />
@@ -22,7 +22,7 @@ exports[`SplitButton renders correctly (disabled) 1`] = `
     className="oc-dropdown-menu"
   >
     <div
-      className="sc-kkGfuU brzToE dropdown btn-group"
+      className="sc-iAyFgw jsSgwk dropdown btn-group"
       primary={0}
       style={
         Object {
@@ -43,7 +43,7 @@ exports[`SplitButton renders correctly (disabled) 1`] = `
         type="button"
       >
         <i
-          className="sc-hMqMXs fa fa-angle-down qPVAu"
+          className="sc-kEYyzF fa fa-angle-down eyeRjN"
           color="white"
           size="2rem"
         />
@@ -132,7 +132,7 @@ exports[`SplitButton renders correctly (disabled) 1`] = `
 
 exports[`SplitButton renders correctly (enabled) 1`] = `
 <section
-  className="sc-kEYyzF kmXTDj"
+  className="sc-kkGfuU guPmGB"
   id="split-button"
 >
   <button
@@ -142,7 +142,7 @@ exports[`SplitButton renders correctly (enabled) 1`] = `
   >
     <i
       aria-hidden="true"
-      className="sc-hMqMXs fa fa-check krqEzY"
+      className="sc-kEYyzF fa fa-check kmLqdR"
       color="lightgreen"
       size="1.5rem"
     />
@@ -152,7 +152,7 @@ exports[`SplitButton renders correctly (enabled) 1`] = `
     className="oc-dropdown-menu"
   >
     <div
-      className="sc-kkGfuU brzToE dropdown btn-group"
+      className="sc-iAyFgw jsSgwk dropdown btn-group"
       primary={0}
       style={
         Object {
@@ -173,7 +173,7 @@ exports[`SplitButton renders correctly (enabled) 1`] = `
         type="button"
       >
         <i
-          className="sc-hMqMXs fa fa-angle-down qPVAu"
+          className="sc-kEYyzF fa fa-angle-down eyeRjN"
           color="white"
           size="2rem"
         />
